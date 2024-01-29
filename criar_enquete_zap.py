@@ -5,7 +5,7 @@ import sys
 
 def criar_enquete():
 
-    msg = pyautogui.prompt("Essa é uma automação para criação de enquete no whatsapp.", "Automação Daniel Coelho")
+    msg = pyautogui.confirm(text="Essa é uma automação para criação de enquete no whatsapp.", title="Automação Daniel Coelho", buttons=["Ok", "Cancelar"])
 
     if msg == None:
             pyautogui.alert("Operação cancelada com sucesso!")
